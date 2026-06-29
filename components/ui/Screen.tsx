@@ -2,6 +2,8 @@ import { PropsWithChildren } from "react"
 
 import { SafeAreaView } from "react-native-safe-area-context"
 
+import { colors } from "@/theme/colors"
+
 export function Screen({
   children,
 }: PropsWithChildren) {
@@ -9,6 +11,7 @@ export function Screen({
     <SafeAreaView
       style={{
         flex: 1,
+        backgroundColor: colors.background,
       }}
     >
       {children}

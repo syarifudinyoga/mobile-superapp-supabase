@@ -1,8 +1,24 @@
 import {
-    Text as RNText,
-    TextProps,
+  Text as RNText,
+  TextProps,
 } from "react-native"
 
-export function Text(props: TextProps) {
-  return <RNText {...props} />
+import { colors } from "@/theme/colors"
+
+export function Text({
+  style,
+  ...props
+}: TextProps) {
+  return (
+    <RNText
+      style={[
+        {
+          color: colors.text,
+          fontSize: 16,
+        },
+        style,
+      ]}
+      {...props}
+    />
+  )
 }
