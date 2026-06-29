@@ -1,23 +1,17 @@
-import { PropsWithChildren } from "react"
-
 import { View } from "react-native"
 
-import { colors } from "@/theme/colors"
+import { colors, radius, spacing } from "@/theme"
 
 export function Card({
   children,
-}: PropsWithChildren) {
+}: React.PropsWithChildren) {
   return (
     <View
       style={{
         backgroundColor: colors.white,
-
-        borderRadius: 16,
-
-        padding: 16,
-
+        borderRadius: radius.lg,
+        padding: spacing.md,
         borderWidth: 1,
-
         borderColor: colors.border,
       }}
     >

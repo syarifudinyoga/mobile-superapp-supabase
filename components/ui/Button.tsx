@@ -1,53 +1,49 @@
-import {
-    ActivityIndicator,
-    Pressable,
-} from "react-native"
+import { ActivityIndicator, Pressable } from "react-native";
 
-import { Text } from "./Text"
+import { colors, radius, spacing } from "@/theme";
+import { Text } from "./Text";
 
-import { colors } from "@/theme/colors"
-
-type Props = {
-  title: string
-
-  loading?: boolean
-
-  disabled?: boolean
-
-  onPress?: () => void
-}
+type ButtonProps = {
+  title: string;
+  onPress?: () => void;
+  loading?: boolean;
+  disabled?: boolean;
+};
 
 export function Button({
   title,
-  loading,
-  disabled,
   onPress,
-}: Props) {
+  loading = false,
+  disabled = false,
+}: ButtonProps) {
+  const isDisabled = loading || disabled;
+
   return (
     <Pressable
-      disabled={disabled || loading}
+      disabled={isDisabled}
       onPress={onPress}
       style={{
-        backgroundColor: disabled
+        backgroundColor: isDisabled
           ? "#CBD5E1"
           : colors.primary,
 
-        paddingVertical: 14,
+        paddingVertical: spacing.md,
+        paddingHorizontal: spacing.lg,
 
-        borderRadius: 12,
-
-        justifyContent: "center",
+        borderRadius: radius.md,
 
         alignItems: "center",
+        justifyContent: "center",
+
+        opacity: isDisabled ? 0.7 : 1,
       }}
     >
       {loading ? (
-        <ActivityIndicator color="#fff" />
+        <ActivityIndicator color={colors.white} />
       ) : (
         <Text
           style={{
-            color: "#fff",
-
+            color: colors.white,
             fontWeight: "600",
           }}
         >
@@ -55,5 +51,5 @@ export function Button({
         </Text>
       )}
     </Pressable>
-  )
+  );
 }
