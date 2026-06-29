@@ -1,50 +1,322 @@
-# Welcome to your Expo app 👋
+# 🚀 Mobile SuperApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Production Ready React Native Starter Kit using **Expo**.
 
-## Get started
+> One codebase for **Android**, **iOS**, and **Web**.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+- 📱 Android
+- 🍎 iOS
+- 🌐 Web
+- 🔥 Expo SDK Latest
+- ⚡ TypeScript
+- 🧭 Expo Router
+- 🎨 NativeWind
+- ☁️ Supabase
+- 🐘 PostgreSQL
+- 📦 Zustand
+- 🔄 TanStack Query
+- 🌍 Axios
+- 📝 React Hook Form
+- ✅ Zod
+- 💾 MMKV
+- 🔐 Secure Store
+- 🎬 Reanimated
+- 🚀 Production Ready Architecture
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+# 📦 Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+| Category | Stack |
+|----------|-------|
+| Framework | Expo SDK Latest |
+| Language | TypeScript |
+| Routing | Expo Router |
+| Styling | NativeWind |
+| Backend | Supabase |
+| Database | PostgreSQL |
+| State | Zustand |
+| Data Fetching | TanStack Query |
+| HTTP | Axios |
+| Forms | React Hook Form |
+| Validation | Zod |
+| Storage | MMKV |
+| Secure Storage | Expo Secure Store |
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+# 🛠 Prerequisites
 
-When you're ready, run:
+Install
+
+- Node.js LTS
+- npm
+- Xcode (macOS)
+- Watchman
+- Expo CLI (via `npx`)
+- Git
+
+Check version
 
 ```bash
-npm run reset-project
+node -v
+npm -v
+npx expo --version
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+# 🚀 Getting Started
 
-To learn more about developing your project with Expo, look at the following resources:
+Create project
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx create-expo-app@latest mobile-superapp
+```
 
-## Join the community
+Go into project
 
-Join our community of developers creating universal apps.
+```bash
+cd mobile-superapp
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Run
+
+```bash
+npm start
+```
+
+Android
+
+```bash
+npm run android
+```
+
+iOS
+
+```bash
+npm run ios
+```
+
+Web
+
+```bash
+npm run web
+```
+
+---
+
+# 📚 Roadmap
+
+- [x] Phase 1 — Initialize Project
+- [x] Phase 2 — Production Configuration
+- [ ] Phase 3 — Providers & Core Architecture
+- [ ] Phase 4 — Design System
+- [ ] Phase 5 — Theme
+- [ ] Phase 6 — State Management
+- [ ] Phase 7 — API Layer
+- [ ] Phase 8 — Supabase
+- [ ] Phase 9 — Authentication
+- [ ] Phase 10 — Navigation
+- [ ] Phase 11 — Dashboard
+- [ ] Phase 12 — CRUD
+- [ ] Phase 13 — Upload
+- [ ] Phase 14 — Notification
+- [ ] Phase 15 — Offline Cache
+- [ ] Phase 16 — Production Build
+- [ ] Phase 17 — CI/CD
+
+---
+
+# ✅ Phase 1 — Initialize Project
+
+## Goal
+
+Setup project foundation.
+
+### Completed
+
+- Expo SDK Latest
+- TypeScript
+- Expo Router
+- Folder Structure
+- Git
+- EAS
+- Environment File
+- Production Folder Layout
+
+### Folder Structure
+
+```text
+mobile-superapp
+│
+├── app
+├── assets
+├── components
+├── config
+├── constants
+├── features
+├── hooks
+├── lib
+├── providers
+├── services
+├── store
+├── theme
+├── types
+└── utils
+```
+
+### Installed Packages
+
+Core
+
+- @supabase/supabase-js
+- @tanstack/react-query
+- axios
+- zustand
+- react-hook-form
+- zod
+
+Expo
+
+- expo-router
+- expo-font
+- expo-secure-store
+- expo-splash-screen
+- expo-status-bar
+
+Native
+
+- react-native-reanimated
+- react-native-gesture-handler
+- react-native-safe-area-context
+- react-native-screens
+- react-native-svg
+
+Storage
+
+- react-native-mmkv
+
+---
+
+# ✅ Phase 2 — Production Configuration
+
+## Goal
+
+Configure project for production.
+
+### Completed
+
+- TypeScript Configuration
+- Path Alias
+- Expo Typed Routes
+- NativeWind Setup
+- Biome
+- Environment Config
+- Theme Folder
+- Config Folder
+- Constants Folder
+- Utils Folder
+- Types Folder
+
+### Config
+
+```text
+config
+│
+├── app.ts
+└── env.ts
+```
+
+### Theme
+
+```text
+theme
+│
+├── colors.ts
+├── spacing.ts
+├── typography.ts
+├── radius.ts
+└── shadow.ts
+```
+
+### Utils
+
+```text
+utils
+│
+├── helper.ts
+├── validator.ts
+├── money.ts
+└── date.ts
+```
+
+### Constants
+
+```text
+constants
+│
+├── regex.ts
+├── routes.ts
+└── storage.ts
+```
+
+---
+
+# 📂 Current Folder Structure
+
+```text
+mobile-superapp
+│
+├── app
+├── assets
+├── components
+├── config
+├── constants
+├── features
+├── hooks
+├── lib
+├── providers
+├── services
+├── store
+├── theme
+├── types
+├── utils
+│
+├── .env.example
+├── app.json
+├── biome.json
+├── expo-env.d.ts
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+# 🎯 Next Phase
+
+Phase 3
+
+- AppProvider
+- QueryProvider
+- AuthProvider
+- ThemeProvider
+- React Query
+- Zustand
+- MMKV
+- Secure Store
+- Supabase Client
+- Splash Screen
+- Auto Login
+- Session Persistence
+
+---
+
+# 📄 License
+
+MIT License

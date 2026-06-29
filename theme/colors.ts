@@ -1,15 +1,19 @@
 export const colors = {
   primary: "#2563EB",
-
   secondary: "#64748B",
 
-  success: "#16A34A",
+  success: "#22C55E",
+  warning: "#F59E0B",
+  danger: "#EF4444",
 
-  warning: "#EAB308",
+  background: "#FFFFFF",
+  surface: "#F8FAFC",
 
-  danger: "#DC2626",
+  text: "#0F172A",
+  textSecondary: "#64748B",
+
+  border: "#E2E8F0",
 
   white: "#FFFFFF",
-
-  black: "#000000"
+  black: "#000000",
 }
